@@ -1,0 +1,210 @@
+/* Цвет заголовков #212121
+Цвет основного текста #757575
+Акцент (синий) #2196F3
+Белый текст #FFFFFF
+Футер (мейл и телефон) rgba(255, 255, 255, 0.6); */
+
+/*Цвет фона 
+1 - #FFFFFF
+2 - #2F303A
+3 - #E5E5E5
+4 - #F5F4FA */
+
+:root {
+    --main-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --hero-text-color: #FFFFFF;
+    --footer-contact-color: rgba(255, 255, 255, 0.6);
+
+    --bgc-hero-color: #2F303A;
+    --bgc-main: #E5E5E5;
+    --bgc-team: #F5F4FA;
+    --white: #FFFFFF;
+}
+
+body {
+    color: var(--main-text-color);
+    background-color: var(--white);
+    font-family: Roboto, sans-serif; 
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;}
+
+/*-------------------------------HEADER-------------------------------*/
+
+/*==========ЛОГОТИП========*/
+.logo {color: #000000;}
+.web {color: var(--accent-color);}
+.logo, .web, .studio {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1,19;
+    letter-spacing: 0.03em;
+    text-decoration: none;}
+
+/*========HEADER-LIST========*/
+.header-list {
+    list-style: none;
+    font-weight: 500; 
+    line-height: 1.14;
+    letter-spacing: 0.02em;}
+.header-list .link {
+    color: var(--title-text-color);
+    text-decoration: none;}
+.header-list .link:hover,
+.header-list .link:focus,
+.header-list .link.current {
+    color: var(--accent-color);}
+
+/*============HEADER-CONTACT==========*/
+.header-contact {
+    list-style: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;}
+.contact-link {
+    color: var(--main-text-color);
+    text-decoration: none;}
+.header-contact .contact-link:hover,
+.header-contact .contact-link:focus {
+    color: var(--accent-color);}
+
+
+/*=======================СТИЛИ ДЛЯ index.html===========================*/
+
+/*---------------------------------HERO-------------------------------*/
+
+/* ==========HERO========= */
+.hero {background-color: var(--bgc-hero-color);}
+
+.hero-title {
+    color: var(--hero-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;}
+
+.button {
+    color: var(--white);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;}
+.button:hover,
+.button:focus {
+    background-color: #188CE8}
+
+/*============BENEFITS=========*/
+
+.benefits-list, 
+.work-list,
+.team-list {list-style: none;}
+
+.subtitle {
+    color: var(--title-text-color);
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;}
+
+.work-title, .team-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;}
+
+/* ==========TEAM=========== */
+
+.team {
+    background-color: var(--bgc-team);} 
+
+.name-team-title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;}
+
+.team-profession {
+    font-size: 16px;
+    line-height: 1.19x;
+    text-align: center;
+    letter-spacing: 0.03em;}
+
+/*------------------------------FOOTER----------------------------*/
+
+.footer {background-color: var(--bgc-hero-color);}
+
+/*Logo*/
+.studio {color: var(--white);}
+
+.footer-list {list-style: none;}
+
+.footer-link {
+    font-style: normal;
+    color:var(--white);
+    text-decoration: none;}
+
+.footer-text {
+    font-style: normal;
+    color: var(--footer-contact-color);
+    text-decoration: none;}
+
+.footer-text:hover,
+.footer-link:hover,
+.footer-text:focus,
+.footer-link:focus {
+    color:var(--accent-color)}
+
+
+/*========================СТИЛИ ДЛЯ portfolio.html===================*/
+
+/*========ФИЛЬТР=======*/
+
+.filter {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;}
+.filter:hover,
+.filter:focus,
+.filter.current {
+    color: var(--white);
+    background-color: var(--accent-color);}
+
+.filter-list, .portfolio-list {list-style: none;}
+
+/*=========PORTFOLIO=======*/
+
+.portfolio-list a {
+    text-decoration: none;}
+
+.portfolio-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;}
+
+.portfolio-text {
+    color: var(--main-text-color);
+    font-size: 16px;
+    line-height: 1.88;}
+    
