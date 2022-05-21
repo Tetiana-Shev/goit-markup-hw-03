@@ -41,6 +41,12 @@ body {
     outline: 2px solid tomato;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /*-------------------------------HEADER-------------------------------*/
 
 /*==========ЛОГОТИП========*/
@@ -113,7 +119,11 @@ body {
 /*---------------------------------HERO-------------------------------*/
 
 /* ==========HERO========= */
-.hero {background-color: var(--bgc-hero-color);}
+.hero {
+    display: block;
+    text-align: center;
+    background-color: var(--bgc-hero-color);
+}
 
 .hero-title {
     margin-top: 0;
@@ -128,8 +138,6 @@ body {
     text-transform: uppercase;}
 
 .button {
-    display: flex;
- 
     align-items: center;
     border-radius: 4px;
     padding: 10px 32px;
@@ -138,12 +146,12 @@ body {
 
     color: var(--white);
     background-color: var(--accent-color);
-    
+    text-align: center;
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    text-align: center;
+    
     letter-spacing: 0.06em;
     cursor: pointer;}
 .button:hover,
@@ -191,10 +199,19 @@ body {
     text-align: center;
     letter-spacing: 0.03em;}
 
+.work-item {
+    margin-bottom: 94px;
+}
+.work-item + .work-item {margin-left: 30px;}
 /* ==========TEAM=========== */
 
 .team {
-    background-color: var(--bgc-team);} 
+    background-color: var(--bgc-team);
+} 
+
+.team-title {padding-top: 94px;}
+
+.team-item + .team-item {margin-left: 30px;} 
 
 .name-team-title {
     margin-top: 0;
@@ -208,7 +225,7 @@ body {
 
 .team-profession {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 94px;
     font-size: 16px;
     line-height: 1.19x;
     text-align: center;
@@ -216,7 +233,9 @@ body {
 
 /*------------------------------FOOTER----------------------------*/
 
-.footer {background-color: var(--bgc-hero-color);}
+.footer {background-color: var(--bgc-hero-color);
+    padding-top: 60px;
+padding-bottom: 60px;}
 
 /*Logo*/
 .studio {color: var(--white);}
@@ -291,6 +310,15 @@ body {
 
 .portfolio-list a {
     text-decoration: none;}
+
+.portfolio-list {
+    /* background-color: teal; */
+    margin: -15px;
+}
+
+.portfolio-item {
+    margin: 15px;
+}
 
 .portfolio-title {
     margin-top: 0;
